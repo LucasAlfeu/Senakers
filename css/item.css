@@ -1,0 +1,50 @@
+.item {
+    display: flex;
+}
+.item__quantidade {
+    display: flex;
+    margin-right: 1rem;
+}
+.quantidade__menos, .quantidade__mais{
+    color: var(--laranja);
+    background: hsl(228, 100%, 97%);
+    border: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    height: 40px;
+    width: 40px;
+}
+.quantidade__menos{
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.quantidade__mais {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.quantidade__numero {
+    background: hsl(228, 100%, 97%);
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+}
+.item__botao {
+    display: flex;
+    background: var(--laranja);
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+@media screen and (max-width: 768px) {
+    .item__botao {
+        width: auto
+    }
+}

@@ -1,0 +1,46 @@
+.imagem {
+    margin: 0 2rem 0 3rem;
+    width: 50%;
+}
+
+.imagem__principal {
+    border-radius: 25px;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+.imagem__container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.imagem__secundaria {
+    border-radius: 15px;
+    width: 100%;
+}
+.image__botao {
+    border: none;
+    background: transparent;
+    width: 20%;
+}
+
+@media screen and (max-width: 768px) {
+    .imagem {
+        margin: 1.5rem auto;
+        width: 65%;
+    }
+    .imagem__principal {
+        width: 70vw;
+    }
+    .imagem__container {
+        width: 70vw;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .imagem__principal{
+        width: 100%;
+    }
+    .imagem__container {
+        width: 100%;
+    }
+}

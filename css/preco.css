@@ -1,0 +1,28 @@
+.preco {
+    align-items: center;
+    display: flex;
+    margin-bottom: 2rem;
+}
+.preco__normal {
+    color: var(--cinza-azulado);
+    margin-right: 1rem;
+}
+.preco__desconto {
+    background: var(--laranja-palido);
+    border-radius: 5px;
+    color: var(--laranja);
+    display: block;
+    height: 1.4rem;
+    margin-right: 1.5rem;
+    text-align: center;
+    width: 40px;
+}
+.preco__atual {
+    font-weight: 600;
+    font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+    .preco {
+        text-align: center;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/perfil.css">
+    <link rel="stylesheet" href="./css/imagem.css">
+    <link rel="stylesheet" href="./css/descricao.css">
+    <link rel="stylesheet" href="./css/preco.css">
+    <link rel="stylesheet" href="./css/item.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__container">
+            <h1 class="cabecalho__titulo"><img src="./images/logo.svg" alt="Logo Sneaker" class="cabecalho__logo" aria-label="Abrir Menu" 
+                aria-haspopup="true"  aria-controls="menu" aria-expanded="false"></h1>
+            <nav class="cabecalho__menu">
+                <ul class="cabecalho__lista">
+                    <li class="cabecalho__item"><a href="#" class="cabecalho__link">Coleções</a></li>
+                    <li class="cabecalho__item"><a href="#" class="cabecalho__link">Homem</a></li>
+                    <li class="cabecalho__item"><a href="#" class="cabecalho__link">Mulher</a></li>
+                    <li class="cabecalho__item"><a href="#" class="cabecalho__link">Sobre</a></li>
+                    <li class="cabecalho__item"><a href="#" class="cabecalho__link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="perfil">
+            <div class="perfil__carrinho"><div class="perfil__compra"></div></div>
+            <div class="perfil__cart" onmouseover="mostraCarrinho()" onmouseout="escondeCarrinho()">
+                <h2 class="perfil__cart--titulo">Carrinho</h2>
+                <div class="perfil__container" >
+                    <img src="./images/image-product-1-thumbnail.jpg" alt="Foto do produto desejado" class="perfil__produto--foto">
+                    <div class="perfil__produto--descricao">
+                        <p class="perfil__nome--produto">Fall Limited Edition Sneakers</p>
+                        <p class="perfil__preco--final"></p>
+                    </div>
+                    <img class="perfil__detele--produto" src="./images/icon-delete.svg" alt="Cancelar compra" onclick="deletarCarrinho()">
+                </div>
+                <button class="perfil__botao" onclick="finalizarCompra()">Comprar</button>
+            </div>
+            <img src="./images/image-avatar.png" alt="Foto de perfil" class="perfil__foto" onmouseenter="mostraCarrinho()">
+        </section>
+    </header>
+    <main class="principal">
+        <section class="imagem">
+            <img src="./images/image-product-1.jpg" alt="Imagem do tenis a venda" class="imagem__principal" id="imagemPrincipal">
+            <div class="imagem__container">
+                <button class="image__botao"  id="primeira"><img src="./images/image-product-1-thumbnail.jpg" alt="" class="imagem__secundaria product-1" onclick="mostraImagem1()"></button>
+                <button class="image__botao" id="segunda"><img src="./images/image-product-2-thumbnail.jpg" alt="" class="imagem__secundaria product-2" onclick="mostraImagem2()"></button>
+                <button class="image__botao" id="terceira"><img src="./images/image-product-3-thumbnail.jpg" alt="" class="imagem__secundaria product-3" onclick="mostraImagem3()"></button>
+                <button class="image__botao" id="quarta"><img src="./images/image-product-4-thumbnail.jpg" alt="" class="imagem__secundaria product-4" onclick="mostraImagem4()"></button>
+            </div>
+        </section>
+        <section class="descricao">
+            <p class="descricao__nome">Empresa de tênis</p>
+            <h2 class="descricao__titulo">Tênis de edição limitada de Outono</h2>
+            <p class="descricao__texto">
+                Estas sapatilhas de perfil baixo são o seu companheiro de roupa casual perfeito. Apresentando um
+                sola exterior de borracha durável, eles resistirão a tudo o que o clima pode oferecer.</p>
+            <div class="preco">
+                <p class="preco__normal">R$ 250,00 </p>
+                <p class="preco__desconto"> 50%</p>
+                <p class="preco__atual">R$ 125,00</p>
+            </div>
+
+            
+            <div class="item">
+                <div class="item__quantidade">
+                    <input type="button" value="-" class="quantidade__menos" id="menos" onclick="numeroItem(this.id)">
+                    <div type="number" class="quantidade__numero">0</div type="number">
+                    <input type="button" value="+" class="quantidade__mais" id="mais" onclick="numeroItem(this.id)">
+                </div>
+                <button class="item__botao" onclick="addCarrinho()">Adicionar ao carrinho</button>
+            </div>
+        </section>
+    </main>
+    <script src="./botao-mobile.js"></script>
+    <script src="./imagem.js"></script>
+    <script src="./compra.js"></script>
+</body>
+</html>
