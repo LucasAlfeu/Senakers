@@ -21,7 +21,7 @@ body {
     margin-top: 3rem;
     align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     body{
         margin: 0;
         padding: 0;

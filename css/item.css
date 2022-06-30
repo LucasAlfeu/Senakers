@@ -1,5 +1,7 @@
 .item {
+    align-items: center;
     display: flex;
+    margin-bottom: 3.75rem;
 }
 .item__quantidade {
     display: flex;
@@ -42,9 +44,27 @@
     font-weight: bold;
     font-size: 1.2rem;
     margin-left: 1rem;
+    text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .item__quantidade {
+        justify-content: center;
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
     .item__botao {
-        width: auto
+        display: block;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .item {
+        justify-content: center;
     }
 }

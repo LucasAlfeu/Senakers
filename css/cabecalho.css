@@ -41,12 +41,12 @@
     .cabecalho {
         align-items: center;
         border: none;
-        justify-content:space-between;
-        margin: 1rem 1rem;
-        width: 100%;
+        padding: 2rem 1rem;
+        width: 95%;
     }
     .cabecalho__container {
         flex-direction: column;
+        justify-content: space-between;
         margin: 0
     }
     .cabecalho__lista {

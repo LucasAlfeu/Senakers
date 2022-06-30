@@ -21,8 +21,9 @@
     font-weight: 600;
     font-size: 2rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .preco {
         text-align: center;
+        justify-content: center;
     }
 }

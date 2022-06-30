@@ -24,7 +24,7 @@
     width: 20%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .imagem {
         margin: 1.5rem auto;
         width: 65%;
@@ -37,6 +37,17 @@
     }
 }
 @media screen and (max-width: 1024px) {
+    .imagem__principal{
+        width: 100%;
+    }
+    .imagem__container {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1224px) {
+    .imagem {
+        margin: 0 1rem
+    }
     .imagem__principal{
         width: 100%;
     }
