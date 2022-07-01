@@ -16,7 +16,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
 </head>
-<body onclick="escondeCarrinho()">
+<body onclick="escondeCarrinho()" ontouchend="escondeCarrinho()">
     <header class="cabecalho">
         <div class="cabecalho__container">
             <h1 class="cabecalho__titulo"><img src="./images/logo.svg" alt="Logo Sneaker" class="cabecalho__logo" aria-label="Abrir Menu" 
@@ -33,7 +33,7 @@
         </div>
         <section class="perfil">
             <div class="perfil__carrinho" onmouseenter="mostraCarrinho()"><div class="perfil__compra"></div></div>
-            <div class="perfil__cart" onmouseover="mostraCarrinho()" onclick="mostraCarrinho()" onmouseout="escondeCarrinho()">
+            <div class="perfil__cart" onmouseover="mostraCarrinho()" ontouchend="mostraCarrinho()" onmouseout="escondeCarrinho()">
                 <h2 class="perfil__cart--titulo">Carrinho</h2>
                 <div class="perfil__container" >
                     <img src="./images/image-product-1-thumbnail.jpg" alt="Foto do produto desejado" class="perfil__produto--foto">
@@ -45,7 +45,7 @@
                 </div>
                 <button class="perfil__botao" onclick="finalizarCompra()">Comprar</button>
             </div>
-            <img src="./images/image-avatar.png" alt="Foto de perfil" class="perfil__foto" onmouseenter="mostraCarrinho()">
+            <img src="./images/image-avatar.png" alt="Foto de perfil" class="perfil__foto" onmouseenter="mostraCarrinho()" ontouchend="mostraCarrinho()">
         </section>
     </header>
     <main class="principal">
