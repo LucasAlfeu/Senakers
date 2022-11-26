@@ -7,6 +7,8 @@
 O estudo simula um e-commerce de venda de tenis. O site foi contruido com HTMl, CSS e JavaScript.
 Primeiramente construi uma lógica de programação, baseada em manipulação do DOM, em que é possível ver diferentes angulos do mesmo tênis simplesmente clicando na foto desejada. Também fiz uma interação entre a quantidade de itens desejados com o carrinho de compras que já aparece o valor final da compra com a opção de finalizar a comprar ou deletar todos os itens do carrinho.
 
+Desafio inspirado em [FrontEnd Mentor](https://www.frontendmentor.io/)
+
 ## Layout
 
 ![Web](https://github.com/LucasAlfeu/portifolio/blob/main/public/portifolioImagem/sneakers.png)
